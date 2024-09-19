@@ -1,0 +1,74 @@
+/*Criando variáveis*/
+t { 
+    --primary-color: #3E0001;
+    --white-color: #ffffff;
+    --gap: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Definindo o tamanho da fonte*/
+html {
+    font-size: 62.5%;
+}
+
+/*Definindo tipo da fonte, tamanho e cor da fonte dentro do body*/
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color)
+}
+/*Definindo tipo da fonte e tamanho da fonte dos titulos*/
+h1, h1, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;  
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 5.5rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+
+/*Definindo e configurando o background*/
+.main-bg {
+    background-image: url(/assets/img/main-bg.svg);
+    background-size: auto;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.white-bg {
+    color: var(-primary-color);
+}
+
+/*Definindo estrutura do conteudo principal*/
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.section {
+    min-height: 100vh;
+}
