@@ -15,13 +15,15 @@
 /*Definindo o tamanho da fonte*/
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 /*Definindo tipo da fonte, tamanho e cor da fonte dentro do body*/
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 2rem;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    line-height: 1.5;
 }
 /*Definindo tipo da fonte e tamanho da fonte dos titulos*/
 h1, h1, h3, h4, h5, h6 {
@@ -33,7 +35,10 @@ h1 {
 }
 
 h2 {
-    font-size: 5.5rem;
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1;
 }
 
 h3 {
@@ -56,23 +61,28 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin-bottom: 3rem;
+}
+
 /*Definindo e configurando o background*/
 .main-bg {
     background-image: url(/assets/img/main-bg.svg);
     background-size: auto;
     background-position: center center;
-    color: var(-primary-color);
+    color: var(--white-color);
 }
 
 .white-bg {
     background-color: var(--white-color);
+    color: var(--primary-color);
 }
 
 /*Definindo estrutura do conteudo principal*/
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 10rem var(--gap);
 }
 
 .section {
@@ -85,6 +95,7 @@ a {
     left: 0;
     right: 0;
     width: 100%;
+    z-index: 1;
     border-bottom: 0.1rem solid var(--ligth-gray-color);
 }
 
@@ -134,4 +145,78 @@ a {
 .menu ul li a:hover::after {
     width: 50%;
     left: 25%;
+}
+
+.menu-spacing {
+    height: 65px;
+}
+
+.intro-content {
+    position: relative;
+    top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.intro-text-content .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-img img {
+    max-width: 100%;
+    min-height: auto;
+}
+
+.top3-content {
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.grid-main-heading {
+   margin-bottom: 1rem;
+}
+
+.grid-description {
+    padding-bottom: 5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(5deg);
 }
