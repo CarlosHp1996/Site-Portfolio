@@ -15,4 +15,5 @@
   <div style="display: inline_block">
     1 - Criando a estrutura html e css inicial do site, adicionando a chamada para o css, importando as fontes para utilizar no css, importando uma imagem de fundo para implementar no backgroud do site, testando o uso das fontes, criando e definindo alguns estilos iniciais no css om variáveis, tamanho e cor de fontes no titulo e no corpo do site, imagem e cor de fundo. ✅ <br><br>
     2 - Criando e estilizando o menu principal + ajustes. ✅ <br><br>
+    3 - Criando a seção de introdução, seção que contem grids, seção da galeria + ajustes. Configurando todos os estilos necessários para cada seção. ✅ <br><br>
     </div><br>
