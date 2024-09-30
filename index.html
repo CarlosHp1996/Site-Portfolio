@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
-<body class="main-bg">
+<body>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
             <h1><a href="#home">LOGO</a></h1>
@@ -18,6 +18,7 @@
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#grid-one">Grid One</a></li>
                     <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#grid-two">Grid Two</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -95,10 +96,112 @@
             </div>
         </div>   
     </section>
-    <section id="gallery" class="section white-bg">
-        <div class="main-content">
-            <h1>Galeria</h1>
-        </div>
+    <section id="gallery" class="grid-one white-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Gallery</h2>
+            <p class="grid-description">Descriçao TESTE TESTE TESTE</p>
+            
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=1" alt="random image from picsum">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=2" alt="random image from picsum">
+                </div>      
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=3" alt="random image from picsum">
+                </div> 
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=4" alt="random image from picsum">
+                </div>  
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=5" alt="random image from picsum">
+                </div>   
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=6" alt="random image from picsum">
+                </div>       
+            </div>
+        </div>   
     </section>
+    <section id="grid-two" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">TESTE TESTE TESTE</h2>
+            <p class="grid-description">Descriçao TESTE TESTE TESTE</p>
+            <div class="grid">
+                <article>
+                    <h3>TESTE TESTE TESTE</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Consectetur quisquam obcaecati sequi voluptates! Sunt, 
+                         in nemo. Eum, consequatur tempore esse, repellendus
+                          excepturi eius asperiores placeat dolores,
+                           libero exercitationem dolorem ut.
+                    </p>
+                </article>         
+                <article>
+                    <h3>TESTE TESTE TESTE</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Consectetur quisquam obcaecati sequi voluptates! Sunt, 
+                         in nemo. Eum, consequatur tempore esse, repellendus
+                          excepturi eius asperiores placeat dolores,
+                           libero exercitationem dolorem ut.
+                    </p>
+                </article>   
+                <article>
+                    <h3>TESTE TESTE TESTE</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Consectetur quisquam obcaecati sequi voluptates! Sunt, 
+                         in nemo. Eum, consequatur tempore esse, repellendus
+                          excepturi eius asperiores placeat dolores,
+                           libero exercitationem dolorem ut.
+                    </p>
+                </article>            
+            </div>
+        </div>   
+    </section>
+    <section id="contact" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                    <h2>January brings us Firefox 85</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Non officia totam debitis quibusdam. Illo nobis quod voluptas
+                    fugit earum, dicta itaque animi excepturi ad alias dolores hic
+                    odio consequatur ab.</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/code-not-optimize.svg" alt="computer with design">          
+            </div> 
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contact Me</legend>
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Your Name">                        
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Your Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rols="10" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit">Send Message</button>
+                    </div>                                      
+                </fieldset>
+                <img src="assets/img/contact-bg.svg" alt="computer with design">          
+            </div> 
+        </div>       
+    </section>
+    <footer id="footer" class="footer white-bg">
+        <p><a target="_blank" href="https://www.linkedin.com/in/carloshpsantos17">Feito por Carlos H.</a></p>
+    </footer>
 </body>
 </html>

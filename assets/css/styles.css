@@ -10,6 +10,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*Definindo o tamanho da fonte*/
@@ -151,9 +152,14 @@ p {
     height: 65px;
 }
 
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
 .intro-content {
     position: relative;
-    top: 1rem;
+    /* top: 1rem; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--gap);
@@ -219,4 +225,92 @@ p {
     top: -4rem;
     left: -2rem;
     transform: rotate(5deg);
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    box-shadow: 0 0 10px 2px var(--secundary-color);
+} 
+
+.form-group button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.form-group ::placeholder {
+    color: var(--ligth-gray-color);
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.footer a {
+    color: var(--primary-color);
+}
+
+.footer p {
+    margin: 0;
+    padding: 3rem;
 }
