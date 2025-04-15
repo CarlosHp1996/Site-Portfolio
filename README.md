@@ -17,4 +17,6 @@
     2 - Criando e estilizando o menu principal + ajustes. ✅ <br><br>
     3 - Criando a seção de introdução, seção que contem grids, seção da galeria + ajustes. Configurando todos os estilos necessários para cada seção. ✅ <br><br>
     4 - Criando o formulário de contato e rodapé. ✅ <br><br>
+    5 - Desenvolvendo o menu mobile + ajustes finais. ✅ <br><br>
+    6 - Finalizando o portfólio profissional. ✅ <br><br>
     </div><br>
