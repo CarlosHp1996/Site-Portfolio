@@ -3,211 +3,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Carlos H. - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
-  <label class="close-menu-label" for="close-menu" title="close menu"></label>
-    <aside class="menu white-bg">
-        <div class="main-content menu-content">            
-                <h1 onclick="getElementById('close-menu').checked = false;">
-                 <a href="#home">LOGO</a>
-                </h1>
-            <nav>
-                <ul onclick="getElementById('close-menu').checked = false;">
-                    <li><a href="#intro">Intro</a></li>
-                    <li><a href="#grid-one">Grid One</a></li>
-                    <li><a href="#gallery">Galeria</a></li>
-                    <li><a href="#grid-two">Grid Two</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>       
-    </aside>
+<header class="header" id="header">
+    <div class="header-content">
+        <h1 class="logo"><a href="#home">CARLOS H.</a></h1>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="main-nav" id="main-nav">
+            <ul class="menu-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <div class="menu-spacing"></div>
-
-    <section id="home" class="intro main-bg section">
-        <div class="main-content intro-content">
-            <div class="intro-text-content">
-                    <h2>January brings us Firefox 85</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Non officia totam debitis quibusdam. Illo nobis quod voluptas
-                    fugit earum, dicta itaque animi excepturi ad alias dolores hic
-                    odio consequatur ab.</p>
+<section id="home" class="hero-section">
+    <div class="main-content hero-content">
+        <div class="hero-text">
+            <h2>Engenheiro de Software</h2>
+            <p>Soluções criativas para websites, aplicações e chatbots. Transformando ideias em realidade digital.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
             </div>
-            <div class="intro-img">
-                <img src="assets/img/code-not-optimize.svg" alt="computer with design">          
-            </div> 
-        </div>       
-    </section>
-    <section id="intro" class="white-bg section">
-        <div class="main-content top3-content">
-            <h2>TESTE</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Debitis adipisci nihil architecto ex aspernatur aliquid
-                  quisquam non, autem dicta necessitatibus nesciunt nostrum
-                   officiis iusto vero labore cumque rerum hic culpa!</p>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis adipisci nihil architecto ex aspernatur aliquid
-                     quisquam non, autem dicta necessitatibus nesciunt nostrum
-                      officiis iusto vero labore cumque rerum hic culpa!</p>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Debitis adipisci nihil architecto ex aspernatur aliquid
-                         quisquam non, autem dicta necessitatibus nesciunt nostrum
-                          officiis iusto vero labore cumque rerum hic culpa!</p>
         </div>
-    </section>
-    <section id="grid-one" class="grid-one main-bg section">
-        <div class="main-content grid-one-content">
-            <h2 class="grid-main-heading">TESTE TESTE TESTE</h2>
-            <p class="grid-description">Descriçao TESTE TESTE TESTE</p>
-            <div class="grid">
-                <article>
-                    <h3>TESTE TESTE TESTE</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Consectetur quisquam obcaecati sequi voluptates! Sunt, 
-                         in nemo. Eum, consequatur tempore esse, repellendus
-                          excepturi eius asperiores placeat dolores,
-                           libero exercitationem dolorem ut.
-                    </p>
-                </article>         
-                <article>
-                    <h3>TESTE TESTE TESTE</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Consectetur quisquam obcaecati sequi voluptates! Sunt, 
-                         in nemo. Eum, consequatur tempore esse, repellendus
-                          excepturi eius asperiores placeat dolores,
-                           libero exercitationem dolorem ut.
-                    </p>
-                </article>   
-                <article>
-                    <h3>TESTE TESTE TESTE</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Consectetur quisquam obcaecati sequi voluptates! Sunt, 
-                         in nemo. Eum, consequatur tempore esse, repellendus
-                          excepturi eius asperiores placeat dolores,
-                           libero exercitationem dolorem ut.
-                    </p>
-                </article>            
-            </div>
-        </div>   
-    </section>
-    <section id="gallery" class="grid-one white-bg section">
-        <div class="main-content grid-one-content">
-            <h2 class="grid-main-heading">Gallery</h2>
-            <p class="grid-description">Descriçao TESTE TESTE TESTE</p>
-            
-            <div class="grid">
-                <div class="gallery-img">
-                    <img src="https://picsum.photos/360/360?r=1" alt="random image from picsum">
-                </div>
-                <div class="gallery-img">
-                    <img src="https://picsum.photos/360/360?r=2" alt="random image from picsum">
-                </div>      
-                <div class="gallery-img">
-                    <img src="https://picsum.photos/360/360?r=3" alt="random image from picsum">
-                </div> 
-                <div class="gallery-img">
-                    <img src="https://picsum.photos/360/360?r=4" alt="random image from picsum">
-                </div>  
-                <div class="gallery-img">
-                    <img src="https://picsum.photos/360/360?r=5" alt="random image from picsum">
-                </div>   
-                <div class="gallery-img">
-                    <img src="https://picsum.photos/360/360?r=6" alt="random image from picsum">
-                </div>       
-            </div>
-        </div>   
-    </section>
-    <section id="grid-two" class="grid-one main-bg section">
-        <div class="main-content grid-one-content">
-            <h2 class="grid-main-heading">TESTE TESTE TESTE</h2>
-            <p class="grid-description">Descriçao TESTE TESTE TESTE</p>
-            <div class="grid">
-                <article>
-                    <h3>TESTE TESTE TESTE</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Consectetur quisquam obcaecati sequi voluptates! Sunt, 
-                         in nemo. Eum, consequatur tempore esse, repellendus
-                          excepturi eius asperiores placeat dolores,
-                           libero exercitationem dolorem ut.
-                    </p>
-                </article>         
-                <article>
-                    <h3>TESTE TESTE TESTE</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Consectetur quisquam obcaecati sequi voluptates! Sunt, 
-                         in nemo. Eum, consequatur tempore esse, repellendus
-                          excepturi eius asperiores placeat dolores,
-                           libero exercitationem dolorem ut.
-                    </p>
-                </article>   
-                <article>
-                    <h3>TESTE TESTE TESTE</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Consectetur quisquam obcaecati sequi voluptates! Sunt, 
-                         in nemo. Eum, consequatur tempore esse, repellendus
-                          excepturi eius asperiores placeat dolores,
-                           libero exercitationem dolorem ut.
-                    </p>
-                </article>            
-            </div>
-        </div>   
-    </section>
-    <section id="contact" class="intro main-bg section">
-        <div class="main-content intro-content">
-            <div class="intro-text-content">
-                    <h2>January brings us Firefox 85</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Non officia totam debitis quibusdam. Illo nobis quod voluptas
-                    fugit earum, dicta itaque animi excepturi ad alias dolores hic
-                    odio consequatur ab.</p>
-            </div>
-            <div class="intro-img">
-                <img src="assets/img/code-not-optimize.svg" alt="computer with design">          
-            </div> 
-            <div class="contact-form">
-                <fieldset class="form-grid">
-                    <legend>Contact Me</legend>
-                    <div class="form-group">
-                        <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name" placeholder="Your Name">                        
+        <div class="hero-image">
+            <img src="assets/img/ChatGPT Image 10 de abr. de 2025, 15_13_33.png" alt="Desenvolvedor trabalhando em código">
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about-section section">
+    <div class="main-content about-content">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Trabalho profissionalmente como desenvolvedor backend especializado 
+                    em C#, realizando desenvolvimento web e manutenção de APIs desde 
+                    2020, foco em aprimorar o desempenho das integrações e aplicações, 
+                    utilizando metodologias ágeis, clean code e participando diretamente no 
+                    desenvolvimento de vários sistemas utilizando C#, SQL Server, DevOps.
+                    Focando sempre na entrega da melhor experiência para o usuário final, 
+                    gosto de solucionar problemas e colocar novas ideias em prática.</p>
+                <div class="skills-container">
+                    <h3>Habilidades</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">C#</div>
+                        <div class="skill-item">SQL</div>
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">Kubernetes</div>
+                        <div class="skill-item">Service Bus</div>
+                        <div class="skill-item">Chatbots</div>
+                        <div class="skill-item">DevOps</div>
+                        <div class="skill-item">HTML/CSS</div>
+                        <div class="skill-item">Javascript</div>
                     </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="/assets/img/perfil 2.jpg" alt="Carlos H.">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects-section section">
+    <div class="main-content projects-content">
+        <h2 class="section-title">Projetos Destacados</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/img/Leonardo_Phoenix_10_Create_a_logo_for_my_music_channel_featuri_2.jpg" alt="Site de Música">
+                </div>
+                <div class="project-info">
+                    <h3>Site de Música</h3>
+                    <p>Plataforma para pedido de videos personalizados.</p>
+                    <div class="project-tech">
+                        <span>.NET 8.0</span>
+                        <span>SQL</span>
+                        <span>Stripe</span>
+                        <span>Javascript</span>
+                    </div>
+                    <a href="#" class="btn btn-small">Em Desenvolvimento</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/img/Leonardo_Phoenix_10_I_am_creating_a_store_that_sells_food_supp_3.jpg" alt="E-commerce de Suplementos">
+                </div>
+                <div class="project-info">
+                    <h3>E-commerce de Suplementos</h3>
+                    <p>Loja online para venda de suplementos de academia com sistema completo de carrinho, pagamento e acompanhamento de pedidos.</p>
+                    <div class="project-tech">
+                        <span>.NET 8.0</span>
+                        <span>SQL</span>
+                        <span>Stripe</span>
+                        <span>Javascript</span>
+                    </div>
+                    <a href="#" class="btn btn-small">Em Desenvolvimento</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/img/whatsapp.webp" alt="Chatbot para WhatsApp">
+                </div>
+                <div class="project-info">
+                    <h3>Chatbot para WhatsApp</h3>
+                    <p>Assistente virtual integrado ao WhatsApp para atendimento automático, agendamentos e respostas personalizadas.</p>
+                    <div class="project-tech">
+                        <span>.NET 8.0</span>
+                        <span>SQL</span>
+                        <span>WebHook</span>
+                        <span>WhatsApp API</span>
+                    </div>
+                    <a href="#" class="btn btn-small">Em Desenvolvimento</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="experience-section section">
+    <div class="main-content experience-content">
+        <h2 class="section-title">Experiência Profissional</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 - Presente</div>
+                <div class="timeline-content">
+                    <h3>Tech Lead</h3>
+                    <h4>Atos</h4>
+                    <p> Líder técnico de uma equipe ágil de software da 
+                        Petrobras chamada SalaCar. Algumas das minhas responsabilidades como 
+                        líder técnico são: definição e/ou validação da 
+                        arquitetura técnica dos novos desenvolvimentos, em alinhamento com à 
+                        arquitetura de referência, validação técnica das entregas do time de 
+                        desenvolvimento em relação à qualidade, arquitetura e aderência aos 
+                        requisitos funcionais e não funcionais estabelecidos, bem como proposição de 
+                        melhorias e ajustes, quando necessário, avaliação da qualidade das 
+                        aplicações.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022 - 2024</div>
+                <div class="timeline-content">
+                    <h3>Analista Desenvolvedor Pleno </h3>
+                    <h4>GlobalSys</h4>
+                    <p>Desenvolvimento e manutenção de APIs utilizando C#, .NET Core, Entity Framework e 
+                        PostgreSQL para a empresa Lecard, melhorando a eficiência do aplicativo ao 
+                        implementar soluções baseadas em microsserviços. 
+                        Desenvolvimento de uma plataforma SaaS para a empresa
+                        Placcar utilizando arquitetura Multi Tenant, contribuindo para a escalabilidade 
+                        e redução de custos operacionais.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2020 - 2022</div>
+                <div class="timeline-content">
+                    <h3>Analista Desenvolvedor Júnior</h3>
+                    <h4>Tata Consultancy Services</h4>
+                    <p>Desenvolvimento e manutenção de APIs no projeto do Banco 
+                        Itaú, utilizando C#, .NET Core, Entity Framework, Swagger e banco de dados. 
+                        Garantindo a robustez e a escalabilidade dos sistemas desenvolvidos, 
+                        aplicando práticas de desenvolvimento ágil.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2019 - 2020</div>
+                <div class="timeline-content">
+                    <h3>Trainee</h3>
+                    <h4>Tata Consultancy Services</h4>
+                    <p>Sustentação de sistemas no projeto do Banco Itaú, utilizando C# 
+                        .NET Core, contribuindo para a estabilidade e desempenho das aplicações.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2015 - 2020</div>
+                <div class="timeline-content">
+                    <h3>Graduação em Engenharia da Computação</h3>
+                    <h4>Unopar</h4>
+                    <p>Formação com ênfase em desenvolvimento de software e gestão de projetos tecnológicos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="gallery-section section">
+    <div class="main-content gallery-content">
+        <h2 class="section-title">Galeria de Trabalhos</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="/assets/img/Aesthetic Beats.png" alt="Projeto 1">
+                <div class="gallery-overlay">
+                    <h3>Aesthetic Beats</h3>
+                    <p>Design moderno e intuitivo</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/img/Power Rock Suplementos.png" alt="Projeto 2">
+                <div class="gallery-overlay">
+                    <h3>Power Rock Suplementos</h3>
+                    <p>Plataforma de vendas online</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/img/Bot WhatsApp.png" alt="Projeto 3">
+                <div class="gallery-overlay">
+                    <h3>ChatBot para WhatsApp</h3>
+                    <p>Automação para seu negócio</p>
+                </div>
+            </div>           
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section section">
+    <div class="main-content contact-content">
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Vamos trabalhar juntos</h3>
+                <p>Estou disponível para projetos freelance, trabalhos em tempo integral ou simplesmente para uma conversa sobre suas ideias.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>carloshpsantos1996@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+55 (43) 99635-8489</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Londrina, Brasil</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/carloshpsantos17" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/CarlosHp1996" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/caaiquesfc/" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/CaiqueSfc" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <!-- <div class="contact-form-container">
+                <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name" placeholder="Your Last Name">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome completo">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="text" name="email" id="email" placeholder="Your Email">
+                        <input type="email" id="email" name="email" placeholder="Seu endereço de email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" name="subject" placeholder="Do que se trata?">
                     </div>
                     <div class="form-group full-width">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rols="10" placeholder="Your Message"></textarea>
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem aqui"></textarea>
                     </div>
-                    <div class="form-group full-width">
-                        <button type="submit">Send Message</button>
-                    </div>                                      
-                </fieldset>
-                <img src="assets/img/contact-bg.svg" alt="computer with design">          
-            </div> 
-        </div>       
-    </section>
-    <footer id="footer" class="footer white-bg">
-        <p><a target="_blank" href="https://www.linkedin.com/in/carloshpsantos17">Feito por Carlos H.</a></p>
-    </footer>
-    <a class="back-to-top" href="#">➤</a>
+                    <button type="submit" class="btn btn-primary full-width">Enviar Mensagem</button>
+                </form>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <h3>Carlos H.</h3>
+            <p>Engenheiro de Software</p>
+        </div>
+        <div class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#projects">Projetos</a>
+            <a href="#experience">Experiência</a>
+            <a href="#contact">Contato</a>
+        </div>        
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Carlos H. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<a href="#home" class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+<script src="/assets/js/script.js"></script>
 </body>
 </html>
